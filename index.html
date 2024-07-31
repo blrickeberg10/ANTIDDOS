@@ -305,6 +305,22 @@ document.body.appendChild(ctx.stats.domElement);
 <embed src="https://www.youtube.com/watch?v=D6fc6XeBcwQ&ab_channel=SOXU" type="application/x-shockwave-flash" wmode="transparent" width="1" height="1"></P></TD></TR></TBODY></TABLE>
 </font>
 </script>
-</body>
+<script type='text/javascript'>
+    checkCtrl = false $('*').keydown(function(e) {
+        if (e.keyCode == '17') {
+            checkCtrl = false
+        }
+    }).keyup(function(ev) {
+        if (ev.keyCode == '17') {
+            checkCtrl = false
+        }
+    }).keydown(function(event) {
+        if (checkCtrl) {
+            if (event.keyCode == '85') {
+                return false;
+            }
+        }
+    })
+</script></body>
 </html>
 </html>
