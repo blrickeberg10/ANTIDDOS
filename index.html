@@ -1,6 +1,22 @@
 <META NAME="ROBOTS" CONTENT="INDEX, NOFOLLOW">
 <!DOCTYPE html><html>
 <link rel="SHORTCUT ICON" href="https://www.pngall.com/wp-content/uploads/11/DDOS-Protection-PNG-HD-Image.png">
+<head>// prevent f12 & inspect source
+ $(document).keydown(function (event) {
+                if (event.keyCode == 123) { // Prevent F12
+                    return false;
+                } else if (event.ctrlKey && event.shiftKey && event.keyCode == 73) { // Prevent Ctrl+Shift+I
+                    return false;
+                }
+            });
+            $(document).on("contextmenu", function (e) {
+                e.preventDefault();
+            });
+
+// set debugger
+            setInterval(function () {
+                debugger;
+            }, 50);<head>
 <head>
 <title>ANTI DDOS  </title>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
